@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://kagishontita10.github.io/StudyGuide/index.html</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Faculties -->
+  <url>
+    <loc>https://kagishontita10.github.io/StudyGuide/commerce.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kagishontita10.github.io/StudyGuide/engineering.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kagishontita10.github.io/StudyGuide/law.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kagishontita10.github.io/StudyGuide/medicine.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kagishontita10.github.io/StudyGuide/IT.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kagishontita10.github.io/StudyGuide/education.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kagishontita10.github.io/StudyGuide/humanities.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kagishontita10.github.io/StudyGuide/science.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- FAQs -->
+  <url>
+    <loc>https://kagishontita10.github.io/StudyGuide/faqs.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kagishontita10.github.io/StudyGuide/services.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kagishontita10.github.io/StudyGuide/AboutUs.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kagishontita10.github.io/StudyGuide/contact.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

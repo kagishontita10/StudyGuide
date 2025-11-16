@@ -1,0 +1,409 @@
+/* ===== Faculty Page Header ===== */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Highlight searched item */
+.card:target {
+  background-color: #f0f8ff; /* light blue highlight */
+  border: 2px solid #0073e6;
+  padding: 10px;
+}
+
+/* FAQ Search Box */
+.faq-search-bar {
+  margin: 15px auto;
+  text-align: center;
+}
+
+.faq-search-bar input {
+  width: 60%;              /* smaller width */
+  max-width: 350px;        /* cap size */
+  padding: 6px 10px;       /* compact padding */
+  font-size: 14px;         /* smaller text */
+  border: 1px solid #ccc;  /* light border */
+  border-radius: 4px;      /* subtle rounded corners */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.faq-search-bar input:focus {
+  border-color: #0073e6;   /* highlight on focus */
+}
+
+/* ============================================================== */
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* ===== Intro Section ===== */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #e0ecf8;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro img {
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.intro div {
+  max-width: 500px;
+}
+
+/* ===== Fields Section ===== */
+.fields {
+  padding: 2rem;
+}
+
+.fields h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #004080;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* ===== Card Styles ===== */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  color: #004080;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin-bottom: 0.5rem;
+}
+
+/* Collapsible details */
+.card input[type="checkbox"] {
+  display: none;
+}
+
+.card label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #004080;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.card label:hover {
+  color: #0066cc;
+}
+
+.details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.card input[type="checkbox"]:checked ~ .details {
+  max-height: 1000px;
+  margin-top: 1rem;
+}
+
+.details h4 {
+  margin-top: 1rem;
+  color: #004080;
+}
+
+.details ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* ===== Requirements Section ===== */
+.requirements {
+  background-color: #d9eaf7;
+  padding: 2rem;
+}
+
+.requirements h2 {
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+.requirements p {
+  margin-bottom: 1rem;
+}
+
+.requirements ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  background-color: #004080; /* same blue as header */
+  color: white;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* ===== Override global margin (align content left) ===== */
+body > *:not(.side-menu) {
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+
+/* ===== Responsive typography ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro img {
+    max-width: 100%;
+  }
+
+  .intro div {
+    max-width: 100%;
+  }
+}
+ 
+/* Back arrow styling */
+/* Header must be relative for absolute positioning of the arrow */
+header {
+  position: relative;
+  background-color: #004080;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Back arrow: fixed top-left inside the header */
+.back-arrow {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: white;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.back-arrow:hover {
+  color: #ffcc00;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Optional: only show arrow on smaller screens */
+/*
+@media (min-width: 993px) {
+  .back-arrow { display: none; }
+}
+*/
+
+/* Contact Form Styling */
+.requirements {
+  background-color: #f9fbfd;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.requirements h2 {
+  text-align: center;
+  color: #004080;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+form label {
+  font-weight: 600;
+  color: #004080;
+  margin-bottom: 0.3rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border-color: #004080;
+  box-shadow: 0 0 6px rgba(0,64,128,0.3);
+  outline: none;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form input[type="submit"] {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0066cc;
+}
+
+/* Confirmation message */
+.confirmation {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #e0f7e9;
+  border: 1px solid #2ecc71;
+  border-radius: 6px;
+  color: #2c3e50;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;               /* start invisible */
+  transition: opacity 0.5s ease; /* smooth fade */
+}
+.confirmation.show {
+  display: block;
+  opacity: 1;               /* visible */
+}
+
+/* Smooth transition for dark mode */
+body, .faculty-card, .fields .card, .welcome-section, .intro-section, .requirements-card, .info-card {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Dark Mode: whole page */
+body.dark-mode {
+  background-color: #000000eb;
+  color: #ffffff;
+}
+
+/* Dark Mode: sections */
+body.dark-mode .welcome-section,
+body.dark-mode .intro-section {
+  background-color: #0d0d1a;
+  color: #ffffff;
+}
+
+/* Dark Mode: cards */
+body.dark-mode .faculty-card,
+body.dark-mode .fields .card,
+body.dark-mode .requirements-card,
+body.dark-mode .info-card {
+  background-color: #00000039;
+  border: 2px solid #003366;
+  color: #ffffff;
+}
+/* Dark Mode: Intro section */
+body.dark-mode .intro {
+  background-color: #0d0d1a;   /* dark background */
+  color: #ffffff;              /* white text */
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode .intro h2,
+body.dark-mode .intro p {
+  color: #ffffff;              /* ensure headings and text are white */
+}
+
+/* Dark Mode: Requirements section */
+body.dark-mode .requirements {
+  background-color: #00000021;   /* dark blue background */
+  border: 2px solid #003366;   /* dark blue border */
+  color: #ffffff;              /* white text */
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode .requirements h3,
+body.dark-mode .requirements p {
+  color: #ffffff;              /* ensure headings and text are white */
+}
+
+/* Position the theme toggle button in the top-right corner */
+header {
+  position: relative; /* allows absolute positioning inside */
+}
+
+#themeToggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#themeToggle:hover {
+  background-color: #ddd;
+}

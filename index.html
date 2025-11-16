@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="University Faculty Guide - Explore Commerce, Engineering, Law, Medicine, Computing, and Education." />
+  <meta name="keywords" content="University, Faculty, Courses, Commerce, Engineering, Law, Medicine, Computing, Education" />
+  <meta name="author" content="Your Name or Institution" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hidden toggles for menu -->
+  <input type="checkbox" id="menu-toggle" hidden>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="nav-left">
+      <label for="menu-toggle" class="menu-toggle">
+        <span></span><span></span><span></span>
+      </label>
+      <div class="logo">Course Guide</div>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Keyword e.g. engineering, science...">
+    </div>
+    
+    <!-- Dark/Light Mode Toggle -->
+    <div>
+        <button id="themeToggle">🌙 Dark Mode</button>
+    </div>
+  </div>
+
+  <!-- Slide-in Menu -->
+  <div class="side-menu">
+    <ul>
+      <li><a href="commerce.html">Commerce Faculty</a></li>
+      <li><a href="engineering.html">Engineering</a></li>
+      <li><a href="law.html">Law</a></li>
+      <li><a href="medicine.html">Medicine</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="humanities.html">Humanities</a></li>
+      <li><a href="science.html">Science</a></li>
+      <li><a href="IT.html">Information Technology</a></li>
+    </ul>
+  </div>
+
+  <!-- Welcome Section -->
+  <section class="welcome-section">
+    <h2>Welcome to the Course Guide</h2>
+    <p>Explore your academic journey with clarity and confidence. Choose your faculty below to begin your path toward excellence.</p>
+  </section>
+
+  <!-- Faculty Section -->
+  <section class="faculty-section">
+    <div class="faculty-card" id="commerceCard" onclick="location.href='commerce.html'">
+      <img src="com.png" alt="Commerce">
+      <p>Business, finance, and economics</p>
+    </div>
+    <div class="faculty-card" id="engineeringCard" onclick="location.href='engineering.html'">
+      <img src="eng.png" alt="Engineering">
+      <p>Innovate and build the future</p>
+    </div>
+    <div class="faculty-card" id="lawCard" onclick="location.href='law.html'">
+      <img src="law.png" alt="Law">
+      <p>Justice and legal systems</p>
+    </div>
+    <div class="faculty-card" id="medicineCard" onclick="location.href='medicine.html'">
+      <img src="med.png" alt="Medicine">
+      <p>Healing and human health</p>
+    </div>
+  <div class="faculty-card" id="computingCard" onclick="location.href='IT.html'">
+    <img src="software-dev.png" alt="Computing">
+    <p>Software, data, and digital innovation</p>
+  </div>
+  <div class="faculty-card" id="educationCard" onclick="location.href='education.html'">
+    <img src="primary.jpg" alt="Education">
+    <p>Teaching, learning, and leadership</p>
+  </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="footer-content">
+      <h3>About Us</h3>
+      <ul>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="AboutUs.html">AboutUs</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+      </ul>
+      <p>Course Guide © 2025 | Registration Number:1785283726</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
